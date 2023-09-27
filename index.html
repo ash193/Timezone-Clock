@@ -2,35 +2,40 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="src/styles.css" />
+    <link rel="stylesheet" href="css/style.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.37/moment-timezone-with-data-1970-2030.min.js"></script>
-    <title>Timezone Clock</title>
+    <title>World Clock - Matt Delac</title>
   </head>
   <body>
     <div class="container">
-      <h1>Timezone Clock</h1>
+      <h1>World Clock</h1>
+
       <select id="city">
-        <option value="">Select a city...</option>
-        <option value="">London</option>
-        <option value="">Miami</option>
-        <option value="">Cairo</option>
+        <option value="">Select a city..</option>
+        <option value="current">My current location</option>
+        <option value="Europe/London">London</option>
+        <option value="America/New_York">New York</option>
+        <option value="Pacific/Auckland">Auckland</option>
       </select>
 
       <div id="cities">
         <div class="city" id="los-angeles">
-          <h2>Los Angeles</h2>
-          <div class="date">Aug 15th 2023</div>
+          <div>
+            <h2>Los Angeles</h2>
+            <div class="date"></div>
+          </div>
+          <div class="time"></div>
         </div>
-        <div class="time">1:45:30 <small>PM</small></div>
-      </div>
-      <div class="city" id="new-york">
-        <div>
-          <h2>New York</h2>
-          <div class="date">Aug 15th 2023</div>
+        <div class="city" id="paris">
+          <div>
+            <h2>Paris</h2>
+            <div class="date"></div>
+          </div>
+          <div class="time"></div>
         </div>
-        <div class="time">1:45:30 <small>PM</small></div>
       </div>
     </div>
     <footer>
@@ -38,6 +43,6 @@
       ><a href="https://github.com/ash193/Timezone-Clock" target="_blank"></a>
       and is open sourced on Github
     </footer>
-    <script src="src/index.js"></script>
+    <script src="javascript/index.js"></script>
   </body>
 </html>
